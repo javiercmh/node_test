@@ -11,7 +11,20 @@ Following [this](https://www.youtube.com/watch?v=G8uL0lFFoN0) tutorial. There's 
   nvn install --lts
   npx express-generator --view=pug
   yarn add nodemon --dev
+  yarn add pg
+  yarn add sequelize
+  yarn global add sequelize-cli
   ```
+
+### Postgres
+
+psql postgres
+
+  ```sql
+  CREATE ROLE "express-mvp-dbuser" WITH LOGIN PASSWORD '123.456';
+  CREATE DATABASE "express-mvp-db";
+  ```
+
 
 ## Debug
 
