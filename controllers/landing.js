@@ -28,3 +28,25 @@ exports.show_lead = function(req, res, next) {
     res.render('lead', { lead: lead});
   });
 }
+
+exports.show_edit_lead = function(req, res, next) {
+  return models.Lead.findOne({
+    where: {
+      id: req.params.lead_id
+    }
+  }).then(lead => {
+    res.render('leads/edit_lead', { lead: lead});
+  });
+}
+
+exports.edit_lead = function(req, res, next) {
+  return models.Lead.update({
+    email: req.body.lead_email
+  }, {
+    where: {
+      id: req.params.lead_id
+    }
+  }).then(result => {
+    res.redirect('/leads/' + req.params.lead_id);
+  })
+}
