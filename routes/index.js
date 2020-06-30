@@ -11,5 +11,6 @@ router.get('/leads', landing.show_leads);
 router.get('/leads/:lead_id', landing.show_lead);
 router.get('/leads/:lead_id/edit', landing.show_edit_lead);
 router.post('/leads/:lead_id/edit', landing.edit_lead);
+router.post('/leads/:lead_id/delete', landing.delete_lead);
 
 module.exports = router;
