@@ -3,7 +3,14 @@ playing around with node
 
 # Installation
 
-nvn install --lts
-npx express-generator --view=pug
+## Initial setup
 
-DEBUG=node-test:* npm start
+Following [this](https://www.youtube.com/watch?v=G8uL0lFFoN0) tutorial. There's also a [blog](https://getbuzz.io/c/learning-expressjs)
+
+  nvn install --lts
+  npx express-generator --view=pug
+  yarn add nodemon --dev
+
+## Debug
+
+  DEBUG=node-test:* npm start
