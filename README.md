@@ -16,6 +16,8 @@ Following [this](https://www.youtube.com/watch?v=G8uL0lFFoN0) tutorial. There's 
   yarn global add sequelize-cli
   ```
 
+migrate???
+
 ### Postgres
 
 psql postgres
